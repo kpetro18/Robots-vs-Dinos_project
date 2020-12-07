@@ -9,6 +9,10 @@ namespace RobotsVsDinos
     class Robot
     {
         //member variables (HAS A)
+        public string robot;
+        public int robotHealth;
+        public int robotPowerLevel;
+        public int robotWeaponType;
 
         //constructor (SPAWNER)
 
