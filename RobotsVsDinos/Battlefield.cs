@@ -20,11 +20,30 @@ namespace RobotsVsDinos
         {
             herd = new List<Dinosaur>();
         //spawn a herd
-            fleet = new List<Robot>();
+           //fleet = new List<Robot>();
         }
 
         //member methods (CAN DO)
+        public Dinosaur CreateHerd(string dinosaurType, int dinosaurHealth, int dinosaurEnergyLevel, int dinosaurAttack)
+        {
+            Dinosaur dino = new Dinosaur(dinosaurType, dinosaurHealth, dinosaurEnergyLevel, dinosaurAttack);
+            PopulateHerd(dino);
+            return dino;
+        }
+        public void PopulateHerd(Dinosaur dino)
+        {
+            herd.Add(dino);
+        }
 
-
+        public Robot CreateFleet(int robotHealth, int robotPowerLevel, string robotWeaponType)
+        {
+            Robot robo = new Robot(robotHealth, robotPowerLevel, robotWeaponType);
+            PopulateFleet(robo);
+            return robo;
+        }
+        public void PopulateFleet(Robot robo)
+        {
+            fleet.Add(robo);
+        }
     }
 }

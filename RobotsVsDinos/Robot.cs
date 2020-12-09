@@ -12,10 +12,15 @@ namespace RobotsVsDinos
         public string robot;
         public int robotHealth;
         public int robotPowerLevel;
-        public int robotWeaponType;
+        public string robotWeaponType;
 
         //constructor (SPAWNER)
-
+        public Robot(int robotHealth, int robotPowerLevel, string robotWeaponType)
+        {
+            this.robotHealth = robotHealth;
+            this.robotPowerLevel = robotPowerLevel;
+            this.robotWeaponType = robotWeaponType;
+        }
         //member methods (CAN DO)
 
 
