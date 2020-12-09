@@ -25,10 +25,10 @@ namespace RobotsVsDinos
         }
         //member methods (CAN DO)
 
-        public void CreateDinosaur(string dinosaurType, int dinosaurHealth, int dinosaurEnergyLevel, int dinosaurAttack)
-        {
+        //public void CreateDinosaur(string dinosaurType, int dinosaurHealth, int dinosaurEnergyLevel, int dinosaurAttack)
+        //{
 
-        }
+        //}
 
     }
 }

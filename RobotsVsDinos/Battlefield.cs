@@ -24,7 +24,7 @@ namespace RobotsVsDinos
         }
 
         //member methods (CAN DO)
-        public Dinosaur CreateHerd(string dinosaurType, int dinosaurHealth, int dinosaurEnergyLevel, int dinosaurAttack)
+        public Dinosaur CreateDino(string dinosaurType, int dinosaurHealth, int dinosaurEnergyLevel, int dinosaurAttack)
         {
             Dinosaur dino = new Dinosaur(dinosaurType, dinosaurHealth, dinosaurEnergyLevel, dinosaurAttack);
             PopulateHerd(dino);
@@ -35,7 +35,7 @@ namespace RobotsVsDinos
             herd.Add(dino);
         }
 
-        public Robot CreateFleet(int robotHealth, int robotPowerLevel, string robotWeaponType)
+        public Robot CreateRobot(int robotHealth, int robotPowerLevel, string robotWeaponType)
         {
             Robot robo = new Robot(robotHealth, robotPowerLevel, robotWeaponType);
             PopulateFleet(robo);
